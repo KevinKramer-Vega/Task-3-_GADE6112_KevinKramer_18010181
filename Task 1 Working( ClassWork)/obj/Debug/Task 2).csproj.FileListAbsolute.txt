@@ -1,0 +1,30 @@
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 2).csprojAssemblyReference.cache
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task_1_Working__ClassWork_.Properties.Resources.resources
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 2).csproj.GenerateResource.cache
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 2).csproj.CoreCompileInputs.cache
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).exe
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).pdb
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe.config
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).pdb
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task2_Kevin_Kramer.Form1.resources
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 2).csprojAssemblyReference.cache
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task2_Kevin_Kramer.Form1.resources
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task_1_Working__ClassWork_.Properties.Resources.resources
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 2).csproj.GenerateResource.cache
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 2).csproj.CoreCompileInputs.cache
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).exe
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).pdb
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe.config
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).pdb
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe.config
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).pdb
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 2).csprojAssemblyReference.cache
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task2_Kevin_Kramer.Form1.resources
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task_1_Working__ClassWork_.Properties.Resources.resources
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 2).csproj.GenerateResource.cache
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 2).csproj.CoreCompileInputs.cache
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).exe
+D:\Vega\GADE6112\POE\Task 3 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).pdb

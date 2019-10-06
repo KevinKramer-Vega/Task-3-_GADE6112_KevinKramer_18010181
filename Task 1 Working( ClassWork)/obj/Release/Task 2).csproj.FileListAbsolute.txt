@@ -1,0 +1,10 @@
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Release\Task 1 Working( ClassWork).exe.config
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Release\Task 1 Working( ClassWork).exe
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\bin\Release\Task 1 Working( ClassWork).pdb
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task 2).csprojAssemblyReference.cache
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task2_Kevin_Kramer.Form1.resources
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task_1_Working__ClassWork_.Properties.Resources.resources
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task 2).csproj.GenerateResource.cache
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task 2).csproj.CoreCompileInputs.cache
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task 1 Working( ClassWork).exe
+C:\Users\krame\Desktop\Task 2 _GADE6112_KevinKramer_18010181\Task 1 Working( ClassWork)\obj\Release\Task 1 Working( ClassWork).pdb

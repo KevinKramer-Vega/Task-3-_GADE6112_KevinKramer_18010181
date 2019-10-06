@@ -1,0 +1,10 @@
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe.config
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).exe
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\bin\Debug\Task 1 Working( ClassWork).pdb
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).csprojAssemblyReference.cache
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task_1_Working__ClassWork_.Form1.resources
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task_1_Working__ClassWork_.Properties.Resources.resources
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).csproj.GenerateResource.cache
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).csproj.CoreCompileInputs.cache
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).exe
+C:\Users\krame\source\repos\Task 1 Working( ClassWork)\Task 1 Working( ClassWork)\obj\Debug\Task 1 Working( ClassWork).pdb
