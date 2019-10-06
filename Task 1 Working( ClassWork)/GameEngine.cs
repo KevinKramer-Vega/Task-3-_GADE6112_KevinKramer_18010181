@@ -9,6 +9,14 @@ using System.Runtime.Serialization.Formatters.Binary;
 //Task 3
 namespace Task2_Kevin_Kramer
 {
+    public enum MapSize
+    {
+        Map10,
+        Map20,
+        Map50,
+        Map100
+    }
+
     [Serializable]
     public class GameEngine
     {
@@ -22,6 +30,7 @@ namespace Task2_Kevin_Kramer
         {
             get { return round; }
         }
+        public MapSize[] mapSize { get; set; }
 
 
         public GameEngine(int numBuildings,int numUnits, TextBox txtInfo, GroupBox gMap)
@@ -162,7 +171,63 @@ namespace Task2_Kevin_Kramer
                         }
                     }
                 }
-               
+                if(map.Units[i]is WizzardUnit)
+                {
+                    WizzardUnit wu = (WizzardUnit)map.Units[i];
+                    if (wu.Health <= wu.MaxHealth * 0.25)// Escape!!!( Running away)
+                    {
+                        wu.Move(r.Next(0, 4));
+                    }
+                    else
+                    {
+                        int shortest = 100;
+                        Unit closest = wu;
+                        foreach (Unit u in map.Units)
+                        {
+                            if (u is WizzardUnit)
+                            {
+                                WizzardUnit otherWu = (WizzardUnit)u;
+                                int distance = Math.Abs(wu.XPos - otherWu.XPos)
+                                         + Math.Abs(wu.YPos - otherWu.YPos);
+                                if (distance < shortest)
+                                {
+                                    shortest = distance;
+                                    closest = otherWu;
+                                }
+                            }
+                        }
+                        //Check In Range
+                        if (shortest <= wu.AttackRange)
+                        {
+                            wu.IsAttacking = true;
+                            wu.Combat(closest);
+                        }
+                        else // Move towards
+                        {
+                            if (closest is WizzardUnit)
+                            {
+                                WizzardUnit closestRu = (WizzardUnit)closest;
+                                if (wu.XPos > closestRu.XPos)//North
+                                {
+                                    wu.Move(0);
+                                }
+                                else if (wu.XPos < closestRu.XPos)//South
+                                {
+                                    wu.Move(2);
+                                }
+                                else if (wu.XPos > closestRu.YPos)//West
+                                {
+                                    wu.Move(3);
+                                }
+                                else if (wu.XPos < closestRu.YPos)//East
+                                {
+                                    wu.Move(1);
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
             map.Display(gBoxMap);
             round++;

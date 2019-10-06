@@ -11,7 +11,9 @@ using System.IO;
 //task 3
 namespace Task2_Kevin_Kramer
 {
+
     [Serializable]
+    
     public class Map
     {
         List<Building> buildings = new List<Building>();//task 2
@@ -43,10 +45,10 @@ namespace Task2_Kevin_Kramer
 
         }
         
-
-     
+       
         public void Generate()
         {
+          
             for(int i=0; i< numUnits; i++)
             {
                 if(rd.Next(0,3)==0)//Generate MeleeUnit
