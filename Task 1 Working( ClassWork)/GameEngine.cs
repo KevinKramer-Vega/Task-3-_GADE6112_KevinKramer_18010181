@@ -171,7 +171,7 @@ namespace Task2_Kevin_Kramer
                         }
                     }
                 }
-                if(map.Units[i]is WizzardUnit)
+                if(map.Units[i]is WizzardUnit)//task 3 new wizzard unit
                 {
                     WizzardUnit wu = (WizzardUnit)map.Units[i];
                     if (wu.Health <= wu.MaxHealth * 0.25)// Escape!!!( Running away)
@@ -259,6 +259,31 @@ namespace Task2_Kevin_Kramer
             {
                 MeleeUnit start = (MeleeUnit)a;
                 RangedUnit end = (RangedUnit)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            //Task 3 new wizzard unit
+            else if(a is WizzardUnit && b is MeleeUnit)
+            {
+                WizzardUnit start = (WizzardUnit)a;
+                MeleeUnit end = (MeleeUnit)b;
+                distance =Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            else if(a is WizzardUnit && b is RangedUnit)
+            {
+                WizzardUnit start = (WizzardUnit)a;
+                RangedUnit end = (RangedUnit)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            else if(a is MeleeUnit && b is WizzardUnit)
+            {
+                MeleeUnit start = (MeleeUnit)a;
+                WizzardUnit end = (WizzardUnit)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            else if(a is RangedUnit && b is WizzardUnit)
+            {
+                RangedUnit start = (RangedUnit)a;
+                WizzardUnit end = (WizzardUnit)b;
                 distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
             }
             return distance;
