@@ -49,7 +49,7 @@ namespace Task2_Kevin_Kramer
         {
             for(int i=0; i< numUnits; i++)
             {
-                if(rd.Next(0,2)==0)//Generate MeleeUnit
+                if(rd.Next(0,3)==0)//Generate MeleeUnit
                 {
                     MeleeUnit m = new MeleeUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -61,7 +61,7 @@ namespace Task2_Kevin_Kramer
                                               "Ninja");//task 2 unit type 
                     units.Add(m);
                 }
-                else// Generate RangedUnit
+                else if(rd.Next(0, 3)==1)// Generate RangedUnit
                 {
                     RangedUnit r = new RangedUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -73,6 +73,19 @@ namespace Task2_Kevin_Kramer
                                               "R",
                                               "Archer");//task 2 unit type
                     units.Add(r);
+                }
+                else
+                {
+                    WizzardUnit w = new WizzardUnit(rd.Next(0, 20),
+                                               rd.Next(0, 20),
+                                               100,
+                                               1,
+                                               20,
+                                               (i % 2 == 0 ? 1 : 0),
+                                               "W",
+                                               "Mage");
+                    units.Add(w);
+
                 }
             }
             for (int i = 0; i < numBuildings; i++)
@@ -121,7 +134,7 @@ namespace Task2_Kevin_Kramer
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
                 }
-                else 
+                else if(u is RangedUnit)
                 {
                     RangedUnit ru = (RangedUnit)u;
                     Button b = new Button();
@@ -129,6 +142,24 @@ namespace Task2_Kevin_Kramer
                     b.Location = new Point(ru.XPos * 20, ru.YPos * 20);
                     b.Text = ru.Symbol;
                     if (ru.Faction == 0)
+                    {
+                        b.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        b.ForeColor = Color.Blue;
+                    }
+                    b.Click += Unit_Click;
+                    groupBox.Controls.Add(b);
+                }
+                else
+                {
+                    WizzardUnit wu = (WizzardUnit)u;
+                    Button b = new Button();
+                    b.Size = new Size(20, 20);
+                    b.Location = new Point(wu.XPos * 20, wu.YPos * 20);
+                    b.Text = wu.Symbol;
+                    if (wu.Faction == 0)
                     {
                         b.ForeColor = Color.Red;
                     }

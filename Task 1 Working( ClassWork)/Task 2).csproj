@@ -64,6 +64,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RangedUnit.cs" />
     <Compile Include="ResourceBuilding.cs" />
+    <Compile Include="Wizzard.cs" />
     <EmbeddedResource Include="D:\Vega\GADE6112\GADE_6112_Task1_POE - Correct Version\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.resx</Link>

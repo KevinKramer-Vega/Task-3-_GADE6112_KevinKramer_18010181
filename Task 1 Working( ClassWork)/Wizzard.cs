@@ -140,7 +140,7 @@ namespace Task2_Kevin_Kramer
         public override string ToString()
         {
             string temp = " ";
-            temp += "Ranged :";
+            temp += "Wizzard :";
             temp += "(" + Symbol + ")";
             temp += "(" + XPos + "," + YPos + ")";
             temp += "Health : " + Health + "," + Attack + "," + AttackRange + "," + Speed;
@@ -149,6 +149,20 @@ namespace Task2_Kevin_Kramer
             return temp;
         }
 
-        public WizzardUnit
+        public WizzardUnit(int x, int y, int h, int s, int a, int f, string sy, string ut)
+        {
+            XPos = x;
+            YPos = y;
+            Health = h;
+            base.maxHealth = h;
+            Speed = s;
+            Attack = a;
+            AttackRange = 3;
+            base.faction = f;
+            Symbol = sy;
+            isAttacking = false;
+            IsDead = false;
+            UnitType = ut;//task 2 unit type
+        }
     }
 }
