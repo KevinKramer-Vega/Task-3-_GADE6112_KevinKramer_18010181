@@ -239,6 +239,15 @@ namespace Task2_Kevin_Kramer
                         txtInfo.Text = mu.ToString();
                     }
                 }
+                else
+                {
+                    WizzardUnit wu = (WizzardUnit)u;
+                    if(wu.XPos==x && wu.YPos==y)
+                    {
+                        txtInfo.Text = "";
+                        txtInfo.Text = wu.ToString();
+                    }
+                }
             }
             foreach(Building d in buildings)
             {
