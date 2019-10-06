@@ -137,7 +137,7 @@ namespace Task2_Kevin_Kramer
                 }
                 return unit;
             }
-            else
+            else 
             {
                 if (UnitGenerate == 0)
                 {
@@ -167,6 +167,7 @@ namespace Task2_Kevin_Kramer
                 }
                 return unit;
             }
+            
         }
 
 

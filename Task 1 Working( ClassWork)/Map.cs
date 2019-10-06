@@ -76,7 +76,7 @@ namespace Task2_Kevin_Kramer
                                               "Archer");//task 2 unit type
                     units.Add(r);
                 }
-                else
+                else//task 3-Generate WizzardUnit
                 {
                     WizzardUnit w = new WizzardUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),

@@ -174,7 +174,7 @@ namespace Task2_Kevin_Kramer
                 if(map.Units[i]is WizzardUnit)//task 3 new wizzard unit
                 {
                     WizzardUnit wu = (WizzardUnit)map.Units[i];
-                    if (wu.Health <= wu.MaxHealth * 0.25)// Escape!!!( Running away)
+                    if (wu.Health <= wu.MaxHealth * 0.50)// Escape!!!( Running away)
                     {
                         wu.Move(r.Next(0, 4));
                     }
