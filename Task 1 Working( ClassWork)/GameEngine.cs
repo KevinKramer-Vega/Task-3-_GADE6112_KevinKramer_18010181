@@ -206,20 +206,20 @@ namespace Task2_Kevin_Kramer
                         {
                             if (closest is WizzardUnit)
                             {
-                                WizzardUnit closestRu = (WizzardUnit)closest;
-                                if (wu.XPos > closestRu.XPos)//North
+                                WizzardUnit closestWu = (WizzardUnit)closest;
+                                if (wu.XPos > closestWu.XPos)//North
                                 {
                                     wu.Move(0);
                                 }
-                                else if (wu.XPos < closestRu.XPos)//South
+                                else if (wu.XPos < closestWu.XPos)//South
                                 {
                                     wu.Move(2);
                                 }
-                                else if (wu.XPos > closestRu.YPos)//West
+                                else if (wu.XPos > closestWu.YPos)//West
                                 {
                                     wu.Move(3);
                                 }
-                                else if (wu.XPos < closestRu.YPos)//East
+                                else if (wu.XPos < closestWu.YPos)//East
                                 {
                                     wu.Move(1);
                                 }
