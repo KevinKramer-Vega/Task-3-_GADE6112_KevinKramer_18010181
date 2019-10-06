@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
+//task 3
 namespace Task2_Kevin_Kramer
 {
     [Serializable]
