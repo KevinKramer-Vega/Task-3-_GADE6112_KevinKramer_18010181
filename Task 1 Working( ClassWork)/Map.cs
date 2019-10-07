@@ -11,9 +11,7 @@ using System.IO;
 //task 3
 namespace Task2_Kevin_Kramer
 {
-
     [Serializable]
-    
     public class Map
     {
         List<Building> buildings = new List<Building>();//task 2
@@ -174,8 +172,7 @@ namespace Task2_Kevin_Kramer
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
                 }
-                    b.Click += Unit_Click;
-                    groupBox.Controls.Add(b);
+                  
             }
             foreach(Building d in buildings)
             {
