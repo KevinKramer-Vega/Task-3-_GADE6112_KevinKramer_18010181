@@ -87,6 +87,16 @@ namespace Task2_Kevin_Kramer
                 RangedUnit ru = (RangedUnit)attacker;
                 Health = Health - (ru.Attack - ru.AttackRange);
             }
+            else if (attacker is WizzardUnit)//updated to include wizzard unit
+            {
+                WizzardUnit wu = (WizzardUnit)attacker;
+                Health = Health - (wu.Attack - wu.AttackRange);
+            }
+            else if (attacker is NeutralTeam)//includes neutral team unit
+            {
+                NeutralTeam nt = (NeutralTeam)attacker;
+                Health = Health - (nt.Attack - nt.AttackRange);
+            }
 
             if (Health <= 0)
             {
@@ -116,6 +126,16 @@ namespace Task2_Kevin_Kramer
             {
                 otherX = ((RangedUnit)other).XPos;
                 otherY = ((RangedUnit)other).YPos;
+            }
+            else if (other is WizzardUnit)// includes new wizzard unit
+            {
+                otherX = ((WizzardUnit)other).XPos;
+                otherY = ((WizzardUnit)other).YPos;
+            }
+            else if (other is NeutralTeam)// includes neutral team wizzard
+            {
+                otherX = ((NeutralTeam)other).XPos;
+                otherY = ((NeutralTeam)other).YPos;
             }
             distance = Math.Abs(XPos - otherX) + Math.Abs(YPos - otherY);
             if (distance <= AttackRange)
