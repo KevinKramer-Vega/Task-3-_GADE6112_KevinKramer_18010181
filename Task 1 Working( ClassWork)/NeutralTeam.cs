@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task2_Kevin_Kramer
 {
+    [Serializable]
     public class NeutralTeam : Unit
     {
         //IsDead field used for Dead method
