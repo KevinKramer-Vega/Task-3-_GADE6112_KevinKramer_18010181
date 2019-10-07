@@ -51,7 +51,7 @@ namespace Task2_Kevin_Kramer
           
             for(int i=0; i< numUnits; i++)
             {
-                if(rd.Next(0,4)==0)//Generate MeleeUnit
+                if(rd.Next(0,3)==0)//Generate MeleeUnit
                 {
                     MeleeUnit m = new MeleeUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -63,7 +63,7 @@ namespace Task2_Kevin_Kramer
                                               "Ninja");//task 2 unit type 
                     units.Add(m);
                 }
-                else if(rd.Next(0, 4)==1)// Generate RangedUnit
+                else if(rd.Next(0, 3)==1)// Generate RangedUnit
                 {
                     RangedUnit r = new RangedUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -76,7 +76,7 @@ namespace Task2_Kevin_Kramer
                                               "Archer");//task 2 unit type
                     units.Add(r);
                 }
-                else if(rd.Next(0, 4) == 2)//task 3-Generate WizzardUnit
+                else //task 3-Generate WizzardUnit
                 {
                     WizzardUnit w = new WizzardUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -88,17 +88,7 @@ namespace Task2_Kevin_Kramer
                                                "Mage");
                     units.Add(w);
                 }
-                else
-                {
-                    WizzardUnit rw=new WizzardUnit(rd.Next(0, 20),
-                                               rd.Next(0, 20),
-                                               100,
-                                               1,
-                                               20,
-                                               3,
-                                               "W",
-                                               "RougeMage");
-                }
+                
             }
             for (int i = 0; i < numBuildings; i++)
             {
@@ -165,7 +155,7 @@ namespace Task2_Kevin_Kramer
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
                 }
-                else if (u is WizzardUnit)
+                else 
                 {
                     //Task 3 WizzardUnit
                     WizzardUnit wu = (WizzardUnit)u;
@@ -184,22 +174,8 @@ namespace Task2_Kevin_Kramer
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
                 }
-                else//Task 3 only wizzard team
-                {
-                    WizzardUnit wu = (WizzardUnit)u;
-                    Button b = new Button();
-                    b.Size = new Size(20, 20);
-                    b.Location = new Point(wu.XPos * 20, wu.YPos * 20);
-                    b.Text = wu.Symbol;
-                    if (wu.Faction == 3)
-                    {
-                        b.ForeColor = Color.Green;
-                    }
-                    
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
-                }
-                
             }
             foreach(Building d in buildings)
             {
