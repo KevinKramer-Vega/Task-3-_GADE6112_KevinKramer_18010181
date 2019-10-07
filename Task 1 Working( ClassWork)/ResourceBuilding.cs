@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 //Task 3
 namespace Task2_Kevin_Kramer
@@ -58,10 +62,25 @@ namespace Task2_Kevin_Kramer
            }
         }
 
-        public void ResourceGenerator()
+        public void ResourceGenerator(int rounds, Label lblResources,Label lblRes)
         {
-            remaining -= 5;
-            resourceGen += 5;
+            do
+            {
+                for (int i = 0; i < remaining; i++)
+                {
+                    resourceType.Remove(i);
+                    if (i > remaining)
+                    {
+                        IsDestroyed = true;
+                        symbol = "XX";
+                    }
+                    //lblResources.Text = "Resource Amount : " + resourceType.Count.Tostring();
+                    lblRes.Text = " Resources Generated : " + i.ToString();
+
+                }
+            }
+            while (rounds < remaining);
+            
         }
 
         public override string ToString()
