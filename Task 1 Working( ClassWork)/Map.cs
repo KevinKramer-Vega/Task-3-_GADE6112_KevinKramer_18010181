@@ -49,7 +49,7 @@ namespace Task2_Kevin_Kramer
           
             for(int i=0; i< numUnits; i++)
             {
-                if(rd.Next(0,3)==0)//Generate MeleeUnit
+                if(rd.Next(0,4)==0)//Generate MeleeUnit
                 {
                     MeleeUnit m = new MeleeUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -61,7 +61,7 @@ namespace Task2_Kevin_Kramer
                                               "Ninja");//task 2 unit type 
                     units.Add(m);
                 }
-                else if(rd.Next(0, 3)==1)// Generate RangedUnit
+                else if(rd.Next(0, 4)==1)// Generate RangedUnit
                 {
                     RangedUnit r = new RangedUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -74,7 +74,7 @@ namespace Task2_Kevin_Kramer
                                               "Archer");//task 2 unit type
                     units.Add(r);
                 }
-                else //task 3-Generate WizzardUnit
+                else if(rd.Next(0, 4) == 2) //task 3-Generate WizzardUnit
                 {
                     WizzardUnit w = new WizzardUnit(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -85,6 +85,17 @@ namespace Task2_Kevin_Kramer
                                                "W",
                                                "Mage");
                     units.Add(w);
+                }
+                else
+                {
+                    NeutralTeam n = new NeutralTeam(rd.Next(0, 20),
+                                               rd.Next(0, 20),
+                                               100,
+                                               1,
+                                               20,
+                                               "NW",
+                                               "Rouge");
+                    units.Add(n);
                 }
                 
             }
