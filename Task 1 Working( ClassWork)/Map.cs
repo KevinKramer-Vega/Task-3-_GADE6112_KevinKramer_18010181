@@ -185,6 +185,7 @@ namespace Task2_Kevin_Kramer
                 }
                 else
                 {
+                    //Displays neutral team
                     NeutralTeam nt = (NeutralTeam)u;
                     Button b = new Button();
                     b.Size = new Size(20, 20);
@@ -263,7 +264,7 @@ namespace Task2_Kevin_Kramer
                         txtInfo.Text = mu.ToString();
                     }
                 }
-                else
+                else if(u is WizzardUnit)
                 {
                     //Task 3 Wizzard unit
                     WizzardUnit wu = (WizzardUnit)u;
@@ -271,6 +272,16 @@ namespace Task2_Kevin_Kramer
                     {
                         txtInfo.Text = "";
                         txtInfo.Text = wu.ToString();
+                    }
+                }
+                else
+                {
+                    //Neutral team info
+                    NeutralTeam nt = (NeutralTeam)u;
+                    if(nt.XPos==x && nt.YPos==y)
+                    {
+                        txtInfo.Text = "";
+                        txtInfo.Text = nt.ToString();
                     }
                 }
             }

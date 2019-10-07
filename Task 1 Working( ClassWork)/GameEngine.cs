@@ -227,7 +227,62 @@ namespace Task2_Kevin_Kramer
                         }
                     }
                 }
-
+                if(map.Units[i] is NeutralTeam)//Neutral
+                {
+                    NeutralTeam nt = (NeutralTeam)map.Units[i];
+                    if (nt.Health <= nt.MaxHealth * 0.50)// Escape!!!( Running away)
+                    {
+                        nt.Move(r.Next(0, 4));
+                    }
+                    else
+                    {
+                        int shortest = 100;
+                        Unit closest = nt;
+                        foreach (Unit u in map.Units)
+                        {
+                            if (u is NeutralTeam)
+                            {
+                                NeutralTeam otherNt = (NeutralTeam)u;
+                                int distance = Math.Abs(nt.XPos - otherNt.XPos)
+                                         + Math.Abs(nt.YPos - otherNt.YPos);
+                                if (distance < shortest)
+                                {
+                                    shortest = distance;
+                                    closest = otherNt;
+                                }
+                            }
+                        }
+                        //Check In Range
+                        if (shortest <= nt.AttackRange)
+                        {
+                            nt.IsAttacking = true;
+                            nt.Combat(closest);
+                        }
+                        else // Move towards
+                        {
+                            if (closest is WizzardUnit)
+                            {
+                                WizzardUnit closestWu = (WizzardUnit)closest;
+                                if (nt.XPos > closestWu.XPos)//North
+                                {
+                                    nt.Move(0);
+                                }
+                                else if (nt.XPos < closestWu.XPos)//South
+                                {
+                                    nt.Move(2);
+                                }
+                                else if (nt.XPos > closestWu.YPos)//West
+                                {
+                                    nt.Move(3);
+                                }
+                                else if (nt.XPos < closestWu.YPos)//East
+                                {
+                                    nt.Move(1);
+                                }
+                            }
+                        }
+                    }
+                }
             }
             map.Display(gBoxMap);
             round++;
@@ -284,6 +339,31 @@ namespace Task2_Kevin_Kramer
             {
                 RangedUnit start = (RangedUnit)a;
                 WizzardUnit end = (WizzardUnit)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            //Neutral Team units
+            else if(a is NeutralTeam &&b is MeleeUnit)
+            {
+                NeutralTeam start = (NeutralTeam)a;
+                MeleeUnit end = (MeleeUnit)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            else if (a is NeutralTeam && b is RangedUnit)
+            {
+                NeutralTeam start = (NeutralTeam)a;
+               RangedUnit end = (RangedUnit)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            else if (a is MeleeUnit && b is NeutralTeam)
+            {
+                MeleeUnit start = (MeleeUnit)a;
+                NeutralTeam end = (NeutralTeam)b;
+                distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
+            }
+            else if(a is RangedUnit && b is NeutralTeam)
+            {
+                RangedUnit start = (RangedUnit)a;
+                NeutralTeam end = (NeutralTeam)b;
                 distance = Math.Abs(start.XPos - end.XPos) + Math.Abs(start.YPos - end.YPos);
             }
             return distance;
