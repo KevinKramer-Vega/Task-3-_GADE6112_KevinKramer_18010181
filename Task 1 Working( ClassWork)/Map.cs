@@ -86,7 +86,7 @@ namespace Task2_Kevin_Kramer
                                                "Mage");
                     units.Add(w);
                 }
-                else
+                else//Generates the neutral unit
                 {
                     NeutralTeam n = new NeutralTeam(rd.Next(0, 20),
                                                rd.Next(0, 20),
@@ -164,7 +164,7 @@ namespace Task2_Kevin_Kramer
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
                 }
-                else 
+                else if( u is WizzardUnit)
                 {
                     //Task 3 WizzardUnit
                     WizzardUnit wu = (WizzardUnit)u;
@@ -183,7 +183,18 @@ namespace Task2_Kevin_Kramer
                     b.Click += Unit_Click;
                     groupBox.Controls.Add(b);
                 }
-                  
+                else
+                {
+                    NeutralTeam nt = (NeutralTeam)u;
+                    Button b = new Button();
+                    b.Size = new Size(20, 20);
+                    b.Location = new Point(nt.XPos * 20, nt.YPos * 20);
+                    b.Text = nt.Symbol;
+                    b.ForeColor = Color.Green;
+                    b.Click += Unit_Click;
+                    groupBox.Controls.Add(b);
+                }
+               
             }
             foreach(Building d in buildings)
             {
